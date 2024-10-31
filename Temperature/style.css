@@ -1,0 +1,127 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2a2a2a, #5f5f5f); /* Light black to gray gradient */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 450px;
+    background: #1f1f1f; /* Dark background for the container */
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+    padding: 20px;
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.Temperature-icon {
+    font-size: 50px;
+    color: #ffffff; /* White color for icon */
+    vertical-align: middle; /* Align icon with text */
+}
+
+h1 {
+    color: #ffffff; /* White color for heading */
+    letter-spacing: 1.2px;
+    font-size: 30px;
+    font-weight: bold; /* Bold font weight */
+    text-decoration: underline; /* Underlined text */
+}
+
+/* Input section styling */
+#celsius, #fahrenheit, #kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: #333333; /* Dark background for input sections */
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#celsius .icon, #fahrenheit .icon, #kelvin .icon {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    background: #555555; /* Darker gray background for icons */
+    color: #ffffff; /* White color for icons */
+    border-radius: 8px 0 0 8px;
+    vertical-align: middle; /* Align icon with text */
+}
+
+input {
+    flex: 5;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold; /* Bold font weight */
+    text-align: center;
+    border: 2px solid #555555; /* Darker gray border for inputs */
+    outline: none;
+    border-radius: 0 8px 8px 0;
+    padding: 0 15px;
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition for border and background color */
+    background-color: #1a1a1a; /* Dark background for input fields */
+    color: #ffffff; /* White text color */
+}
+
+input:hover {
+    background-color: #333333; /* Slightly lighter background on hover */
+}
+
+input:focus {
+    border-color: #ffffff; /* White border on focus */
+    background-color: #333333; /* Slightly lighter background on focus */
+}
+
+/* Remove spin buttons in various browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Button styling */
+.button {
+    margin-top: 20px;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold; /* Bold font weight */
+    border-radius: 8px;
+    cursor: pointer;
+    background: #444444; /* Dark gray background for button */
+    color: #ffffff; /* White text color */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
+
+.button button:hover {
+    background: #666666; /* Lighter gray on hover */
+    color: #000000; /* Black text color on hover */
+}
+
